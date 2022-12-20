@@ -31,7 +31,7 @@ function revealHiddenScript(hiddenScript, hiddenScriptNames = []) {
 
     let hiddenScriptNameRegex = new RegExp('\\/\\*¤¤' + hiddenScriptName + '¤¤\\s([^¤]+)¤¤¤\\*\\/');
     let hiddenScriptExcerpt = hiddenScript.match(hiddenScriptNameRegex)[1];
-    (Function(`${hiddenScriptExcerpt}`))();
+    Function(`${hiddenScriptExcerpt}`)();
   }
 }
 
