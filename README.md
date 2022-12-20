@@ -5,6 +5,43 @@ At this stage this feels like a solution looking for a problem...
 
 *ie. this is still a proof of concept which may (at some point) find utility - or it may not ever.*
 
+_______
+
+## External Javascript File:
+
+```js
+/*¤¤SB_TEST_1¤¤ console.log('This test is really working!'); ¤¤¤*/
+
+/*¤¤SB_TEST_2¤¤ console.log('This test is also really working!!'); ¤¤¤*/
+```
+
+_______
+
+## Main Javascript File:
+
+```js
+
+  //***********************//
+ // REVEAL HIDDEN SCRIPTS //
+//***********************//
+
+function revealHiddenScript(hiddenScript, hiddenScriptNames = []) {
+
+  for (let hiddenScriptName of hiddenScriptNames) {
+
+    let hiddenScriptNameRegex = new RegExp('\\/\\*¤¤' + hiddenScriptName + '¤¤\\s([^¤]+)¤¤¤\\*\\/');
+    let hiddenScriptExcerpt = hiddenScript.match(hiddenScriptNameRegex)[1];
+    (Function(`${hiddenScriptExcerpt}`))();
+  }
+}
+
+let hiddenScriptNames = ['SB_TEST_1', 'SB_TEST_2'];
+let hiddenScriptURL = '/external-javascript-file.js';
+requestRemoteResponse(hiddenScriptURL, revealHiddenScript, hiddenScriptNames);
+
+```
+
+
 
 _____
 
