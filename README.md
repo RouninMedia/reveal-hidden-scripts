@@ -1,7 +1,7 @@
 # Reveal Hidden Scripts
-Reveal Hidden Scripts is a technique in which scripts are wrapped in comments and later unwrapped, parsed and executed.
+Reveal Hidden Scripts is a technique in which JavaScript functions are wrapped in JS comments and later unwrapped, parsed and executed.
 
-At this stage it's still a solution looking for a problem... ie. this is a proof of concept which may (at some point) - or may not ever - find utility.
+At this stage this feels like a solution looking for a problem... ie. this is still a proof of concept which may (at some point) find utility - or it may not ever.
 
 
 _____
