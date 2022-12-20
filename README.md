@@ -10,9 +10,11 @@ _______
 ## External Javascript File:
 
 ```js
-/*¤¤SB_TEST_1¤¤ console.log('This test is really working!'); ¤¤¤*/
+/*¤¤CONSOLE_LOG_1¤¤ console.log('This test is really working!'); ¤¤¤*/
 
-/*¤¤SB_TEST_2¤¤ console.log('This test is also really working!!'); ¤¤¤*/
+/*¤¤CONSOLE_LOG_2¤¤ console.log('This test is also really working!!'); ¤¤¤*/
+
+/*¤¤CHANGE_MAIN_HEADING_COLOR¤¤ document.querySelector('h1').style.setProperty('color', 'pink'); ¤¤¤*/
 ```
 
 _______
@@ -35,7 +37,7 @@ function revealHiddenScript(hiddenScript, hiddenScriptNames = []) {
   }
 }
 
-let hiddenScriptNames = ['SB_TEST_1', 'SB_TEST_2'];
+let hiddenScriptNames = ['CONSOLE_LOG_1', 'CONSOLE_LOG_2', 'CHANGE_MAIN_HEADING_COLOR'];
 let hiddenScriptURL = '/external-javascript-file.js';
 requestRemoteResponse(hiddenScriptURL, revealHiddenScript, hiddenScriptNames);
 
