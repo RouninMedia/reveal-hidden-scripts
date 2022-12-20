@@ -10,11 +10,13 @@ _______
 ## External Javascript File:
 
 ```js
+
 /*¤¤CONSOLE_LOG_1¤¤ console.log('This test is really working!'); ¤¤¤*/
 
 /*¤¤CONSOLE_LOG_2¤¤ console.log('This test is also really working!!'); ¤¤¤*/
 
 /*¤¤CHANGE_MAIN_HEADING_COLOR¤¤ document.querySelector('h1').style.setProperty('color', 'pink'); ¤¤¤*/
+
 ```
 
 _______
@@ -42,8 +44,6 @@ let hiddenScriptURL = '/external-javascript-file.js';
 requestRemoteResponse(hiddenScriptURL, revealHiddenScript, hiddenScriptNames);
 
 ```
-
-
 
 _____
 
