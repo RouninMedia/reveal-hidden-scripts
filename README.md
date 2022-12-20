@@ -10,7 +10,7 @@ _____
 
 ## Original Inspiration
 
-**Oct 27th, 2008:**
+*okito, SproutCore Blog, Oct 27th, 2008:*
 
 > The Gmail team used an interesting technique to reduce their load time on the iPhone by loading scripts as comment which they later regexed and `eval`’d on demand. [...] Believe it or not, your browser can actually spend a significant amount of time just parsing your code; especially if you have a lot of it.
 
