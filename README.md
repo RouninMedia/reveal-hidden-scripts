@@ -8,6 +8,8 @@ _____
 
 ## Original Inspiration
 
+**Oct 27th, 2008:**
+
 > The Gmail team used an interesting technique to reduce their load time on the iPhone by loading scripts as comment which they later regexed and `eval`’d on demand. [...] Believe it or not, your browser can actually spend a significant amount of time just parsing your code; especially if you have a lot of it.
 
 > You can get around this with some trickery, it turns out, by downloading your JavaScript, not as actual script, but as something else.  The Gmail team wrapped their scripts in comments. [... Since...] comments both don’t involve constructing actual code, the browser is able to process this code much faster on initial download.  Only later, when you actually need the code, do you need to `eval()` the code to get it ready.
