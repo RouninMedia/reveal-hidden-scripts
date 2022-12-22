@@ -77,3 +77,12 @@ _____
 > Overall, wrapping code as a large comment is faster than [...] loading the function directly.  That is a huge win if parsing time is your primary bottleneck.
 
 **Source:** https://web.archive.org/web/20091130185400/http://blog.sproutcore.com/post/225219087/faster-loading-through-eval
+
+
+> Mobile networks have decent bandwidth, but poor round trip latency, so listing each module as a separate resource [...] incurs quite a bit of extra startup latency [...] Typically, resources are downloaded once the main page is loaded, but that's not an ideal time since that's when the application requests user data.
+
+> To work-around these caveats, we found a trick that allows you to bundle all of your modules into a single resource without having to parse any of the JavaScript [...] To combine all modules into a single resource, we wrote each module into a separate script tag and hid the code inside a comment block (/\* \*/). When the resource first loads, none of the code is parsed since it is commented out. To load a module, find the DOM element for the corresponding script tag, strip out the comment block, and eval() the code. [...] An added bonus is the ability to lazy load your modules synchronously since there's no longer a need to fetch the modules asynchronously over the network.
+
+*Bikin Chiu, Software Engineer, Google Mobile, Sept 3rd, 2009:*
+
+**Source:** https://web.archive.org/web/20220128121555/http://googlecode.blogspot.com/2009/09/gmail-for-mobile-html5-series-reducing.html
