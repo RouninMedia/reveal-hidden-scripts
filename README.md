@@ -56,13 +56,13 @@ When parsed by Carlos Bueno's [**Parse 'n' Load** Tool](https://github.com/arist
 
 By contrast the entirely commented file parses and loads in an average time of: `34ms`
 
-This reveals that the commented script file - which is 170.4% the size of its counterpart - parses in ***a quarter*** the time it takes for the uncommented script file.
+This reveals that the *commented script file* - not less than 170.4% the size of its counterpart - may be parsed in ***a quarter*** the time it takes for the *uncommented script file* to be parsed.
 
-This shows - for what it's worth - that having a script completely commented out when it is first downloaded saves a significant amount of time.
+For what it's worth, this shows that having a script completely commented out when it is first downloaded saves a significant amount of time.
 
-Here we are saving not less than **75%** of the time it takes to download and parse a JS file.
+Here we are saving as much as **75%** of the time it takes to download and parse a JS file.
 
-Anything above 100ms is noticeable, while anything below is perceived as near-instantaneous. So reducing processing time from `135ms` to `34ms` is a dramatic difference. 
+Since anything above 100ms is noticeable, while anything below is perceived as near-instantaneous, reducing processing time from `135ms` to `34ms` is a dramatic difference. 
 
 _____
 
