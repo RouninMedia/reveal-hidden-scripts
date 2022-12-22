@@ -62,7 +62,7 @@ For what it's worth, this shows that having a script completely commented out wh
 
 Here we are saving as much as **75%** of the time it takes to download and parse a JS file.
 
-Since anything above 100ms is noticeable, while anything below is perceived as near-instantaneous, reducing processing time from `135ms` to `34ms` is a dramatic difference. 
+Since anything above 100ms is noticeable (while anything below is perceived as near-instantaneous) reducing processing time from `135ms` to `34ms` is a dramatic difference. 
 
 _____
 
